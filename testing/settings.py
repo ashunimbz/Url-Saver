@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dh(c-4c3%-wggo_1#@@f9bd9-$&+2v1$m*!6qd8z)3r94w&bru'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -138,3 +138,4 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 LOGIN_REDIRECT_URL = 'authorize:home'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
