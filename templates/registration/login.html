@@ -12,8 +12,8 @@
     <input type="submit" class="btn btn-success" value="{% trans 'Log in' %}" />
     <input type="hidden"  name="next" value="{{ next }}" />
 <br><br>
-<p style="font-size: x-large">{% trans "Forgot your password?" %} <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>.</p>
-<p style="font-size: x-large" >{% trans "Not a member?" %} <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>.</p>
+<p style="font-size: large">{% trans "Forgot your password?" %} <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>.</p>
+<p style="font-size: large" >{% trans "Not a member?" %} <a href="{% url 'registration_register' %}">{% trans "Register" %}</a>.</p>
   </div>
 </form>
 {% endblock %}

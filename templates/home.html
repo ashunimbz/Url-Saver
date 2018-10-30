@@ -7,12 +7,14 @@
 <div class="padit headFont" align="left">
 <h2  style="color:black">Welcome {{request.user.username}} | <a href="{%  url 'auth_logout'   %}" style="font-size: xx-large">Logout</a> </h2>
 </div>
+
 <div class ="padit" style="font-size: 30px" align="right" >
 
 <a href="{% url 'authorize:add_category' %}"> Add Category</a>
 </div>
 <br>
 <br>
+{% if c != 0 %}
 <div class="padit fontit">
 <table class="table table-hover table-light  table-bordered ">
     <thead class="table-dark">
@@ -52,5 +54,10 @@
 {% endfor %}
    </tbody>
 </table>
+{% else %}
+  <div>
+    <h2>You don't have any urls at the moment .You can start adding URL's by clicking on the add category button</h2>
+ </div>
+{% endif %}
 </div>
 {% endblock %}

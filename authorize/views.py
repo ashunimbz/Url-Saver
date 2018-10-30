@@ -8,7 +8,8 @@ from authorize.models import Category
 def home(request):
     if request.user.is_authenticated:
          category = request.user.categories.all()
-         return render(request , 'home.html' , {'category':category})
+         c = category.count()
+         return render(request , 'home.html' , {'category':category,'c':c})
     else:
         return redirect('/accounts/register/')
 
