@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0365fc26-00ee-4966-9d06-bc94acde14cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/testing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/wsgi.py" afterDir="false" />
-    </list>
+    <list default="true" id="0365fc26-00ee-4966-9d06-bc94acde14cf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,7 +356,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="-11" width="1305" height="780" extended-state="6" />
+    <frame x="62" y="-11" width="1305" height="780" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34208432" />
