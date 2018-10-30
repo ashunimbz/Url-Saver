@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<div class="padit headFont" align="left">
+<h2  style="color:black">Welcome {{request.user.username}} | <a href="{%  url 'auth_logout'   %}" style="font-size: xx-large">Logout</a> </h2>
+</div>
+<div class ="padit" style="font-size: 30px" align="right" >
+
+<a href="{% url 'authorize:add_category' %}"> Add Category</a>
+</div>
+<br>
+<br>
+<div class="padit fontit">
+<table class="table table-hover table-light  table-bordered ">
+    <thead class="table-dark">
+    <tr>
+        <th scope="col">
+    <h1 class ="tablefont" style="color:white"></h1>
+    </th>
+    <th scope="col">
+    <h1 class ="tablefont" style="color:white">Categories</h1>
+    </th>
+    <th scope="col">
+     <h1 class ="tablefont" style="color:white" >Number of Urls</h1>
+    </th>
+     <th scope="col">
+     <h1 class ="tablefont" style="color:white" >Last Modified</h1>
+    </th>
+</tr>
+      </thead>
+  <tbody>
+{% for cat in category %}
+
+ <tr>
+      <th scope="col">
+      <a class ="tablefont" href="{% url 'authorize:add_url' cat_id=cat.id  %}"><i class="fas fa-plus"></i></a>
+    </th>
+    <th scope="col">
+    <a class ="tablefont link-color" href="{%  url 'authorize:show_urls' cat_id=cat.id  %}">{{cat.name}}</a>
+    </th>
+    <th scope="col">
+     <h1 class ="tablefont" > {{ cat.urls.all.count}} </h1>
+    </th>
+    <th scope="col">
+     <h1 class ="tablefont" > {{ cat.last_modified}} </h1>
+    </th>
+</tr>
+
+{% endfor %}
+   </tbody>
+</table>
+</div>
+{% endblock %}

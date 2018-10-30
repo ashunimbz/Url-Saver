@@ -1,0 +1,98 @@
+
+
+.header{
+    padding: 20px;
+    text-align: center;
+    color: #5897fb;
+    font-family:'Architects Daughter', cursive;
+}
+
+.headFont{
+ font-family: 'Imprima', sans-serif;
+}
+
+.block{
+   border: 3px solid gray;
+
+}
+
+
+.container {
+    padding: 16px;
+    padding-top: 20px;
+}
+form {
+  text-align: center;
+}
+
+.input-xlarge{
+    width: 200px;
+    height: 40px;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+ .input{
+
+     width: 100% ;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+body {
+  font-family: Inconsolata;
+  font-size: 13px
+}
+.tablefont{
+    font-size:28px;
+}
+.temp{
+    font-size: large;
+}
+.label_help_cls{
+    font-size:xx-large;
+    font-family: Imprima;
+}
+.link-color{
+    color:  #5897fb;
+     font-family:'Imprima', sans-serif;
+}
+.form {
+
+    background: #fff;
+    padding: 4em 4em 2em;
+    max-width: 500px;
+    margin: 50px auto 0;
+    box-shadow: 0 0 1em #222;
+    border-radius: 2px;
+
+}
+
+.right{
+    margin-top: 25px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.left{
+    margin-right:40px;
+}
+.padit{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.col{
+    color: green;
+}
+
+

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="padit">
+    {% crispy form %}
+    {% if flag %}
+    <p class="label_help_cls text-danger">A category with that name already exists !</p>
+    {% endif %}
+</div>
+
+
+{% endblock %}
+
+

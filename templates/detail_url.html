@@ -1,0 +1,26 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+
+
+{% ifequal cat.urls.all.count 0 %}
+ <div class="container ">
+      <div class="jumbotron">
+        <h3>This Category has no urls!</h3>
+      </div>
+ </div>
+
+{% else %}
+   {% for url in cat.urls.all %}
+  <div class="container ">
+      <div class="jumbotron">
+          <h3> <a href =  {{url.url}}>{{url.url}}</a>  </h3>
+    <br>
+   <h3>{{url.description}}</h3>
+    <br>
+   <h3>{{url.date}}</h3>
+          </div>
+  </div>
+    {% endfor %}
+ {% endifequal  %}
+{% endblock %}
