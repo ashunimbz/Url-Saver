@@ -4,12 +4,16 @@
 {% block title %}{% trans "Account Activated" %}{% endblock %}
 
 {% block content %}
-<p>
+<p style="font-size: x-large ">
     {% trans "Your account is now activated." %}
     {% if not user.is_authenticated %}
     {% trans "You can log in." %}
     {% endif %}
 </p>
+    <br><br>
+    <p style="font-size: x-large ">
+    <a href = "{% url 'auth_login' %}">Log in </a>
+    </p>
 {% endblock %}
 
 

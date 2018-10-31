@@ -27,7 +27,7 @@ SECRET_KEY = 'dh(c-4c3%-wggo_1#@@f9bd9-$&+2v1$m*!6qd8z)3r94w&bru'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =True
 
-ALLOWED_HOSTS = [".herokuapp.com"]
+ALLOWED_HOSTS = [".herokuapp.com",'*']
 
 
 # Application definition
@@ -83,9 +83,10 @@ WSGI_APPLICATION = 'testing.wsgi.application'
 
 DATABASES = {
      'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       #Production setting ,uncomment following line for heroku
+       #  'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
     }
 }
