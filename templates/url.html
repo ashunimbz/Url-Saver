@@ -2,11 +2,13 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<div class="padit headFont" align="left">
+<h2  style="color:black">Welcome {{request.user.username}} | <a href="{%  url 'authorize:home'   %}" style="font-size: xx-large">Home</a>  | <a href="{%  url 'auth_logout'   %}" style="font-size: xx-large">Logout</a> </h2>
+</div>
 
-
-
+  <br><br>
    <div class="padit">
-      <h2>Add a url to {{category.name}}  Category</h2>
+      <h3>Add a url to {{category.name}} </h3>
     {% crispy form %}
 
     </div>

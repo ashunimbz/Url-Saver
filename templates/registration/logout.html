@@ -5,4 +5,6 @@
 
 {% block content %}
 <p style="font-size: x-large">{% trans "Successfully logged out" %}.</p>
+    <br>
+    <p style="font-size: x-large">Return to <a href="{% url 'authorize:home' %} ">home</a> page. </p>
 {% endblock %}

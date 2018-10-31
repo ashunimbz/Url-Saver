@@ -5,7 +5,7 @@
 
 
 <div class="padit headFont" align="left">
-<h2  style="color:black">Welcome {{request.user.username}} | <a href="{%  url 'auth_logout'   %}" style="font-size: xx-large">Logout</a> </h2>
+<h2  style="color:black">Welcome {{request.user.username}} | <a href="{%  url 'authorize:home'   %}" style="font-size: xx-large">Home</a>  | <a href="{%  url 'auth_logout'   %}" style="font-size: xx-large">Logout</a> </h2>
 </div>
 
 <div class ="padit" style="font-size: 30px" align="right" >
@@ -55,9 +55,13 @@
    </tbody>
 </table>
 {% else %}
-  <div>
-    <h2>You don't have any urls at the moment .You can start adding URL's by clicking on the add category button</h2>
+
+   <div class="container ">
+      <div class="jumbotron">
+       <h3>You don't have any urls at the moment .You can start adding URL's by clicking on the add category button</h3>
+      </div>
  </div>
+
 {% endif %}
 </div>
 {% endblock %}
